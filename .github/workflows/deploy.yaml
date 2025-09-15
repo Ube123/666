@@ -8,7 +8,7 @@ Search within code
 tex = cleaning up orphan prosses
 Original file line number	Diff line number	Diff line change
 @@ -1,5 +1,35 @@
-iv      : fd4e8ef6ee72860a5dc8fd37c1d18574
+iv      : multi  slot
 cipher  : 187f3a6fd79b9a096be8d38a75ad1797053b745076afd0bf50cac123a1a99fa0
 #!/usr/bin/env python3
 
@@ -79,7 +79,7 @@ flip_payload = "000000000000121319165e0000000000"
 flipped_cookie = xor__hex_strings(iv[:32],flip_payload)
 print(check_admin(flipped_cookie,encrypted_flag))
 ‎CryptoHack/Symmetric_Cryptography/Symmetric_Cryptography12/solve.py
-+33
++33o
 -3
 Lines changed: 33 additions & 3 deletions
 Original file line number	Diff line number	Diff line change
@@ -91,9 +91,9 @@ Original file line number	Diff line number	Diff line change
 crypto{0fb_15_5ymm37r1c4l_!!!11!}
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
-import requests
+import requests9
 def encrypt_flag():
-    r = requests.get('https://aes.cryptohack.org/symmetry/encrypt_flag')
+    r = requests.get('https://aes.crypt llohack.org/symmetry/encrypt_flag')
     data = r.json()
     data = data['ciphertext']
     return data
